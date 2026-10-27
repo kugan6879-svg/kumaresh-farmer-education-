@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farmer Education</title>
+<style>
+:root{--green:#236b45;--dark:#173b2b;--light:#f2f7ed;--gold:#efbd58;--text:#24352b}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 Arial,sans-serif;color:var(--text);background:#fbfcf8}
+header{background:var(--dark);color:white;padding:16px 5%;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:1.25rem;font-weight:bold} .brand span{color:#d9edb6}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none}
+.hero{padding:55px 5%;background:linear-gradient(120deg,#e9f3df,#fbfcf8);display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.1;color:var(--dark);margin:12px 0}h2{color:var(--dark)}.eyebrow{color:var(--green);font-weight:bold;text-transform:uppercase;letter-spacing:1px}
+.hero p{font-size:1.1rem}.btn{display:inline-block;background:var(--green);color:white;padding:11px 17px;border-radius:9px;text-decoration:none;margin:6px 6px 0 0;font-weight:bold}
+.art{background:var(--green);color:white;text-align:center;border-radius:24px;padding:28px}.art div{font-size:5rem}
+section{padding:45px 5%}.intro{text-align:center;max-width:700px;margin:0 auto 25px}.intro p{color:#617166}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #dfe9da;border-radius:14px;padding:20px}.card .icon{font-size:2rem}.card h3{color:var(--green);margin:8px 0}.card p{margin:0;color:#617166}
+.learn{background:var(--light)}.controls{text-align:center;margin-bottom:18px}.controls button{padding:9px 16px;border:1px solid #cbdcc9;border-radius:20px;background:white;color:var(--green);font-weight:bold}.controls button.active{background:var(--green);color:white}
+.lessons{max-width:850px;margin:auto}details{background:white;border:1px solid #dce7d7;border-radius:10px;padding:15px;margin:10px 0}summary{font-weight:bold;cursor:pointer;color:var(--dark)}details p{color:#617166}
+.notice{max-width:850px;margin:20px auto;background:#fff7e5;padding:14px;border-left:4px solid var(--gold);border-radius:7px}
+.impact{background:var(--dark);color:white}.impact h2{color:white}.impact .intro p{color:#d2dfd4}.impact .card{background:#214b36;border-color:#38634b;color:white}.impact .card h3{color:#d9edb6}.impact .card p{color:#e0e9e1}
+footer{text-align:center;background:#10291d;color:#d7e3d9;padding:22px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px}.cards{grid-template-columns:1fr}header{align-items:flex-start}}
+</style></head><body>
+<header><div class="brand">🌱 Farmer <span>Education</span></div><nav><a href="#topics">Topics</a><a href="#learn">Learn</a><a href="#goal">Our goal</a></nav></header>
+<main>
+<section class="hero"><div><div class="eyebrow" data-en="Knowledge for every field" data-ta="ஒவ்வொரு வயலுக்கும் அறிவு">Knowledge for every field</div>
+<h1 data-en="Learn better. Farm smarter. Grow sustainably." data-ta="சிறப்பாகக் கற்போம். புத்திசாலித்தனமாக விவசாயம் செய்வோம். நிலையாக வளர்வோம்.">Learn better. Farm smarter. Grow sustainably.</h1>
+<p data-en="A simple learning website for crop care, soil health, water saving, and safe farming practices." data-ta="பயிர் பராமரிப்பு, மண் வளம், நீர் சேமிப்பு மற்றும் பாதுகாப்பான விவசாய முறைகளை அறிய உதவும் எளிய இணையதளம்.">A simple learning website for crop care, soil health, water saving, and safe farming practices.</p>
+<a class="btn" href="#learn" data-en="Start learning" data-ta="கற்றலைத் தொடங்குங்கள்">Start learning</a></div>
+<div class="art"><div>🌾</div><h2 style="color:white" data-en="Small lessons. Stronger farms." data-ta="சிறிய பாடங்கள். சிறந்த விவசாயம்.">Small lessons. Stronger farms.</h2><p>Learn • Apply • Grow</p></div></section>
+<section id="topics"><div class="intro"><h2 data-en="Explore farming topics" data-ta="விவசாயத் தலைப்புகள்">Explore farming topics</h2><p data-en="Practical information for everyday farm decisions." data-ta="தினசரி விவசாய முடிவுகளுக்கான நடைமுறைத் தகவல்கள்.">Practical information for everyday farm decisions.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🌱</div><h3 data-en="Soil health" data-ta="மண் வளம்">Soil health</h3><p data-en="Learn about soil testing, compost, and soil protection." data-ta="மண் பரிசோதனை, இயற்கை உரம் மற்றும் மண் பாதுகாப்பைப் பற்றி அறியுங்கள்.">Learn about soil testing, compost, and soil protection.</p></article>
+<article class="card"><div class="icon">💧</div><h3 data-en="Water saving" data-ta="நீர் சேமிப்பு">Water saving</h3><p data-en="Explore ways to use water carefully and reduce waste." data-ta="நீரை சிக்கனமாகப் பயன்படுத்தும் வழிகளை அறியுங்கள்.">Explore ways to use water carefully and reduce waste.</p></article>
+<article class="card"><div class="icon">🐛</div><h3 data-en="Crop care" data-ta="பயிர் பராமரிப்பு">Crop care</h3><p data-en="Learn to observe crops and identify common problems." data-ta="பயிர்களைக் கவனித்து பொதுவான பிரச்சினைகளை அறியுங்கள்.">Learn to observe crops and identify common problems.</p></article>
+<article class="card"><div class="icon">🌦️</div><h3 data-en="Weather awareness" data-ta="வானிலை விழிப்புணர்வு">Weather awareness</h3><p data-en="Check trusted local forecasts before farm activities." data-ta="விவசாயப் பணிகளுக்கு முன் உள்ளூர் வானிலை முன்னறிவிப்பைப் பாருங்கள்.">Check trusted local forecasts before farm activities.</p></article>
+<article class="card"><div class="icon">♻️</div><h3 data-en="Sustainable farming" data-ta="நிலையான விவசாயம்">Sustainable farming</h3><p data-en="Protect soil and water with responsible practices." data-ta="பொறுப்பான முறைகளால் மண்ணையும் நீரையும் பாதுகாக்கவும்.">Protect soil and water with responsible practices.</p></article>
+<article class="card"><div class="icon">📋</div><h3 data-en="Government schemes" data-ta="அரசுத் திட்டங்கள்">Government schemes</h3><p data-en="Use official sources to check schemes and eligibility." data-ta="அரசுத் திட்டங்கள் மற்றும் தகுதிகளை அதிகாரப்பூர்வ ஆதாரங்களில் சரிபார்க்கவும்.">Use official sources to check schemes and eligibility.</p></article>
+</div></section>
+<section class="learn" id="learn"><div class="intro"><h2 data-en="Quick learning corner" data-ta="விரைவுக் கற்றல் பகுதி">Quick learning corner</h2><p data-en="Choose a language and open a lesson." data-ta="மொழியைத் தேர்ந்தெடுத்து பாடத்தைத் திறக்கவும்.">Choose a language and open a lesson.</p></div>
+<div class="controls"><button id="enBtn" class="active">English</button> <button id="taBtn">தமிழ் (Tamil)</button></div>
+<div class="lessons" id="enLessons">
+<details><summary>1. Why is soil testing useful?</summary><p>Soil testing helps identify nutrient levels. Ask a local agriculture office or recognised laboratory about testing before choosing fertilisers.</p></details>
+<details><summary>2. How can water be saved?</summary><p>Check soil moisture, maintain irrigation equipment, and ask local experts which water-saving methods suit your crop.</p></details>
+<details><summary>3. What should I do if I notice pests?</summary><p>Record what you observe and ask an agricultural extension officer before applying pesticide. Follow official safety guidance and product labels.</p></details>
+<details><summary>4. Where can I find scheme information?</summary><p>Check official government agriculture websites or visit a local agriculture office to confirm eligibility and deadlines.</p></details></div>
+<div class="lessons" id="taLessons" hidden>
+<details><summary>1. மண் பரிசோதனை ஏன் பயனுள்ளது?</summary><p>மண்ணில் உள்ள ஊட்டச்சத்துகளை அறிய மண் பரிசோதனை உதவும். உரம் தேர்வு செய்வதற்கு முன் உள்ளூர் வேளாண்மை அலுவலகத்தை அணுகுங்கள்.</p></details>
+<details><summary>2. நீரை எவ்வாறு சேமிக்கலாம்?</summary><p>மண்ணின் ஈரப்பதத்தைக் கவனித்து, நீர்ப்பாசனக் கருவிகளைச் சரிபாருங்கள். உங்கள் பயிருக்கு ஏற்ற முறையை உள்ளூர் நிபுணரிடம் கேளுங்கள்.</p></details>
+<details><summary>3. பூச்சிகளைக் கண்டால் என்ன செய்ய வேண்டும்?</summary><p>பாதிக்கப்பட்ட பகுதியைப் பதிவு செய்து வேளாண் அலுவலரிடம் ஆலோசனை பெறுங்கள். பாதுகாப்பு வழிகாட்டுதலைப் பின்பற்றாமல் பூச்சிக்கொல்லி பயன்படுத்த வேண்டாம்.</p></details>
+<details><summary>4. அரசுத் திட்டத் தகவல்களை எங்கே பெறலாம்?</summary><p>அரசின் அதிகாரப்பூர்வ வேளாண்மை இணையதளத்தைப் பாருங்கள் அல்லது அருகிலுள்ள வேளாண்மை அலுவலகத்தை அணுகுங்கள்.</p></details></div>
+<div class="notice" data-en="Note: This is an educational prototype. It does not provide live weather data or verify current schemes. Confirm important decisions with local agricultural experts and official sources." data-ta="குறிப்பு: இது கல்விக்கான மாதிரி இணையதளம். நேரடி வானிலைத் தகவல் அல்லது அரசுத் திட்ட உறுதிப்படுத்தல் இதில் இல்லை. முக்கிய முடிவுகளுக்கு உள்ளூர் நிபுணர்கள் மற்றும் அதிகாரப்பூர்வ ஆதாரங்களை அணுகுங்கள்.">Note: This is an educational prototype. It does not provide live weather data or verify current schemes. Confirm important decisions with local agricultural experts and official sources.</div>
+</section>
+<section class="impact" id="goal"><div class="intro"><h2 data-en="Our goal" data-ta="எங்கள் நோக்கம்">Our goal</h2><p data-en="Make useful farming knowledge easier to access." data-ta="பயனுள்ள விவசாய அறிவை எளிதில் கிடைக்கச் செய்வது.">Make useful farming knowledge easier to access.</p></div>
+<div class="cards"><article class="card"><h3>SDG 2</h3><p data-en="Zero Hunger — support food security." data-ta="பசியற்ற உலகம் — உணவுப் பாதுகாப்பை ஆதரித்தல்.">Zero Hunger — support food security.</p></article><article class="card"><h3>SDG 4</h3><p data-en="Quality Education — make learning accessible." data-ta="தரமான கல்வி — கற்றலை எளிதில் கிடைக்கச் செய்தல்.">Quality Education — make learning accessible.</p></article><article class="card"><h3>SDG 12</h3><p data-en="Responsible Consumption — use resources carefully." data-ta="பொறுப்பான நுகர்வு — வளங்களை கவனமாகப் பயன்படுத்துதல்.">Responsible Consumption — use resources carefully.</p></article></div></section>
+</main><footer><strong>Farmer Education</strong> — Learn • Apply • Grow<br>Student project prototype. Verify agricultural advice with trusted local experts.</footer>
+<script>
+const enBtn=document.getElementById('enBtn'),taBtn=document.getElementById('taBtn');
+function language(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-en]').forEach(e=>e.textContent=e.dataset[lang]);document.getElementById('enLessons').hidden=lang!=='en';document.getElementById('taLessons').hidden=lang!=='ta';enBtn.classList.toggle('active',lang==='en');taBtn.classList.toggle('active',lang==='ta');}
+enBtn.onclick=()=>language('en');taBtn.onclick=()=>language('ta');
+</script></body></html>
